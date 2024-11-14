@@ -8,28 +8,28 @@ To design, develop, and deploy an interactive web application for browsing an im
 ## DESIGN STEPS:
 
 ### Step 1:
-Create a new frame in Figma.
+Create a new HTML file to set up the main structure of the gallery.
 
-### Step 2: 
-Choose a preset size based on the gallery layout.
+### Step 2:
+Choose a layout for the gallery – either a grid or list format – to display the images attractively.
 
 ### Step 3:
-Select grid or list shapes for displaying images.
+Use CSS to style the gallery, applying grid or flexbox for arranging images in a neat format.
 
-### Step 4: 
-Import images to populate the gallery.
+### Step 4:
+Add images to the gallery by linking to your source images or placeholders.
 
-### Step 5: 
-Implement JavaScript for hover effects, image detail view, and zoom.
+### Step 5:
+Use JavaScript to add interactivity. Implement hover effects for smooth image scaling. Add a click event to each image for an enlarged detail view. Include navigation and zoom options within the detail view. 
 
 ### Step 6:
-Validate the HTML, CSS, and JavaScript code.
+Validate your HTML, CSS, and JavaScript code to ensure cross-browser compatibility and responsive design.
 
-### Step 7: 
-Publish the website on the assigned URL.
+### Step 7:
+Deploy the gallery by hosting it on your preferred platform or assigned URL.
 
 ## PROGRAM:
-
+# T.HTML
 ~~~
 <!DOCTYPE html>
 <html lang="en">
@@ -254,7 +254,105 @@ Publish the website on the assigned URL.
 </html>
 ~~~
 
+# T.CSS
+~~~
+body, h1, h2, p 
+{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe989;
+    color: #333;
+    line-height: 1.6;
+}
+header 
+{
+    background: WELCOME no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 4em 0;
+    position: relative;
+}
+.header-content 
+{
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 1em;
+    border-radius: 8px;
+}
+main 
+{
+    padding: 1em;
+}
+.gallery 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+.dog
+{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Consistent width */
+    height: 230px;
+
+}
+.dog img 
+{
+    width: 100%; /* Ensures image fits the container width */
+    height: 90%; /* Maintains aspect ratio */
+    border-radius: 8px;
+}
+aside
+{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    right: 1em;
+    top: 10em;
+    width: 250px; /* Consistent width */
+}
+aside img 
+{
+    width: 100%; /* Ensures image fits the container width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+footer 
+{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+h2
+{
+    display:flex ;
+    justify-content: center;
+}
+~~~
+
 ## OUTPUT:
+![Screenshot 2024-11-14 081744](https://github.com/user-attachments/assets/41422444-376f-44b4-bca1-1b78e2843a9e)
 
 ## RESULT:
 The program to design, develop, and deploy an interactive image gallery web application with JavaScript functionality is completed successfully.
